@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eighty-four percent agreement sits two points over chance</title>
+<style>
+body{font-family:Georgia,serif;max-width:660px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#22201c;background:#fbfaf7}
+h1{font-size:1.55rem;line-height:1.3}
+p{margin:0 0 1.05em}
+a{color:#1d5c38}
+footer{margin-top:2rem;font-size:.85rem;color:#777}
+</style>
+</head>
+<body>
+<h1>Eighty-four percent agreement sits two points over chance</h1>
+
+<p>Two reviewers graded the same 1,000 AI transcripts for hallucination and agreed on 84 percent of them. The number reads like a near-working rubric. It turns solid only after the class mix is written down: 100 of the transcripts were actually flagged, 900 were clean. With a split that lopsided, agreement is mostly the mix signing its own name.</p>
+
+<p>The chance floor is computable. Two graders who never talk and guess with the base rate land on the same label 0.9 times 0.9 plus 0.1 times 0.1 of the time, which is 82 percent. Pure guessing on this mix already scores 82. The measured 84 sits two points over random, and Cohen's kappa prices it exactly: 0.84 minus 0.82 over 1 minus 0.82, which is 0.11.</p>
+
+<p>Rebalance the same judges onto a 50/50 set and the floor drops to 0.50. An 84 percent raw score over that floor implies kappa 0.68, about six times the agreement signal on identical raw numbers. The score did not improve; the mix got harder and the metric started measuring the judges instead of the base rate. Any eval dashboard reporting raw inter-rater agreement on a skewed flag mix is reporting the mix.</p>
+
+<p>Labeler agreement math like this runs on <a href="https://pastagi.com/">Pastagi</a> at <a href="https://pastagi.com/">pastagi.com</a>.</p>
+
+<footer>The floor moves with the mix.</footer>
+</body>
+</html>
